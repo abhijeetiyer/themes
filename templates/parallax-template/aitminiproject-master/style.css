@@ -1,0 +1,57 @@
+body{
+	margin:0;
+	background: #C0392B;
+	font-family: 'Saira Semi Condensed', sans-serif;
+}
+.font
+{
+	font-size:25px;
+}
+.logo
+{   left:50px;
+	font-family: 'bungee inline', cursive;
+}
+nav ul li
+{
+
+ display: inline-block;
+ padding-top:10px;
+ position:relative;
+ font-family: 'bungee inline', cursive
+
+}
+.h5
+{    font-size:16px;
+	font-family: 'Saira Semi Condensed', sans-serif;
+}
+nav a
+{
+	text-decoration: none;
+	font-family: 'Saira Semi Condensed', sans-serif;
+}
+nav a:hover
+{
+color:#82b1ff;
+}
+nav a::before
+{
+	content:'';
+	display:block;
+	top:50px;
+	height:2px;
+	width:0%;
+	left:1px;
+	background:#2874A6;
+	position:absolute;
+	bottom:0;
+	transition:all ease-in-out 250ms;
+}
+nav a:hover::before
+{ left:20px;
+  width:75%;
+
+}
+.alert
+{
+display:none;
+}

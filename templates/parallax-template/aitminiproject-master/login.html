@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale = 1.0">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="css/materialize.min.css">
+	<script src="js/materialize.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Bungee+Inline|Saira+Semi+Condensed" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	<title></title>
+</head>
+<body>
+<header>
+<div class="navbar-fixed">
+  <nav class="grey lighten-3  z-depth-5">
+    <div class="nav-wrapper">
+        <a href="index.html" class="brand-logo logo blue-text"><img src="pwd.png" height="40px">PWD</a>
+        <div class="container">
+          <a href="#" data-activates="mobile-demo" class="button-collapse blue-text"><i class="material-icons">menu</i></a>
+          <ul class="left hide-on-med-and-down">
+          <li><a class="blue-text" href="index.html"><i class="material-icons left">home</i>Home</a></li>
+          <li><a class="blue-text" href="about_us.html"><i class="material-icons left">business</i>About Us</a></li>
+          <li><a class="blue-text" href="contact_us.html"><i class="material-icons left">web</i>Contact Us</a></li>
+          </ul>
+          <ul class="right hide-on-med-and-down">
+            <li class="active"><a class="blue-text" href="login.html"><i class="material-icons left">person</i>Log In</a></li>
+						<li><a class="blue-text" id="adminlog" href="admin.html"><i class="material-icons left">person</i>Admin Log In</a></li>
+						<li><a onclick="logout()" id="logoutbtn" class=" grey darken-4 center"><i class="material-icons left">person</i>Log out</a></li>
+
+          </ul>
+        </div>
+    </div>
+  </nav>
+</div>
+  <ul class="side-nav a grey lighten-3" id="mobile-demo">
+        <li><a href="index.html" class="blue-text"><i class="material-icons left">home</i>Home</a></li>
+        <li><a href="about_us.html" class="blue-text"><i class="material-icons left">business</i>About Us</a></li>
+        <li><a href="contact_us.html" class="blue-text"><i class="material-icons left">contact_phone</i>Contact Us</a></li>
+				<li class="active"><a class="blue-text" href="login.html"><i class="material-icons left">person</i>Log In</a></li>
+				<li><a class="blue-text" id="adminlog" href="admin.html"><i class="material-icons left">person</i>Admin Log In</a></li>
+				<li><a onclick="logout()" class="blue-text"><i class="material-icons left">person</i>Logout</a></li>  </ul>
+
+  <script type="text/javascript">
+      $( document ).ready(function() {
+      $(".button-collapse").sideNav();
+    });
+  </script>
+</header>
+<br>
+<br><br><br>
+<div class="container">
+	<div id="login-div" class="card-panel z-depth-5  brown darken-1">
+	<div class="row">
+    <div class="col s12">
+			<h2>Enter your Employee Id</h2>
+      <hr>
+      <br>
+    </div>
+
+			<div  class="row">
+				<form id="Emplog" method="post">
+	<div class="card-panel col s12 m5 l5">
+		<div class="input-field col s12 m12 l12">
+          <i class="material-icons prefix">account_circle</i>
+          <input  type="text" id="empid" class="validate">
+          <label>Emp_id</label>
+        </div>
+	</div>
+	<div class="card-panel offset-m1 offset-l1 col s12 m5 l5">
+		<div class="input-field col s12 m12 l12">
+          <i class="material-icons prefix">fingerprint</i>
+          <input id="emppass" type="password" class="validate">
+          <label>password</label>
+        </div>
+	</div>
+	</form>
+	</div>
+
+	<button onclick="login()" id="empbtn" class="waves-effect waves-light grey darken-3 white-text btn">Login</a></div>
+  </div>
+</div>
+</div>
+<div id="user-div">
+<div class="text-align center">
+		<h1>Welcome to the employee section</h1>
+	</div>
+<div class="container">
+	<div class="card-panel blue darken-4 darken-2 text-align center">
+	<a href="empattendance.html" id="attendance" class="waves-effect waves-light  blue btn">enter attendance</a><br><br>
+
+		<button onclick="logout()" class="waves-effect waves-light  blue btn">logout</button>
+	<br><br>
+	</div>
+</div>
+</div>
+<footer class="page-footer light-blue darken-4">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">Content</h5>
+                <p class="grey-text text-lighten-4">This is a simple miniproject as to understand how a website can be built using different frameworks and tools
+                the content of the website is taken from different websites.Links for more details of the website is provided above</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Links</h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2014 Copyright Text
+            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            </div>
+          </div>
+        </footer>
+
+				<script src="adminlogin.js"></script>
+				<script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+				<script src="emplogin.js"></script>
+</body>
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css?family=Bungee+Inline|Saira+Semi+Condensed" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<title></title>
+	<style type="text/css">
+   #map
+    {
+      height:400px;
+      width:100%;
+    }
+ </style>
+</head>
+<body>
+<header>
+<div class="navbar-fixed">
+  <nav class="grey lighten-3  z-depth-5">
+    <div class="nav-wrapper">
+        <a href="index.html" class="brand-logo logo blue-text"><img src="pwd.png" height="40px">PWD</a>
+        <div class="container">
+          <a href="#" data-activates="mobile-demo" class="button-collapse blue-text"><i class="material-icons">menu</i></a>
+          <ul class="left hide-on-med-and-down">
+          <li><a class="blue-text" href="index.html"><i class="material-icons left">home</i>Home</a></li>
+          <li><a class="blue-text" href="about_us.html"><i class="material-icons left">business</i>About Us</a></li>
+          <li class="active"><a class="blue-text" href="contact_us.html"><i class="material-icons left">web</i>Contact Us</a></li>
+          </ul>
+          <ul class="right hide-on-med-and-down">
+          <li><a class="blue-text" href="login.html"><i class="material-icons left">person</i>Log In</a></li>
+          <li><a class="blue-text" href="admin.html"><i class="material-icons left"> person</i>Admin Log In</a></li>
+          </ul>
+        </div>
+    </div>
+  </nav>
+</div>
+  <ul class="side-nav a grey lighten-3" id="mobile-demo">
+        <li><a href="index.html" class="blue-text"><i class="material-icons left">home</i>Home</a></li>
+        <li><a href="about_us.html" class="blue-text"><i class="material-icons left">business</i>About Us</a></li>
+        <li class="active"><a href="contact_us.html" class="blue-text"><i class="material-icons left">contact_phone</i>Contact Us</a></li>
+        <li><a class="blue-text" href="login.html"><i class="material-icons left">person</i>Log In</a></li>
+        <li><a class="blue-text" href="admin.html"><i class="material-icons left">person</i>Admin Log In</a></li>
+  </ul>
+
+  <script type="text/javascript">
+      $( document ).ready(function() {
+      $(".button-collapse").sideNav();
+    });
+  </script>
+</header>
+<div class="container" id="contact">
+  <h1>Contact Us</h1>
+  <h2 class="alert">Your message has been sent</h2>
+  <form class="card-panel brown darken-1 white-text col s12 m12 l12 z-depth-5 z-depth-5" id="contactForm">
+      <div class="row">
+      <div class=" col s12 m5 l5 card-panel brown darken-4 z-depth-5">
+       <div class="col s12 m12 l12 text-align left"><br><i class="material-icons left">location_on</i><h6><u>Branch-1</u></h6>CPWD <br>Goverment office <br>
+             15th floor,old Cgo Annexe, G.B.Road,thane(west), mumbai
+             maharashtra 400615
+           </div>
+           <div class="col s12 m12 l12 text-align left"><i class="material-icons left">location_on</i><h6><u>Branch-2</u></h6>CPWD <br>Goverment office <br>
+             15th floor,old Cgo Annexe, G.B.Road,thane(west), mumbai
+             maharashtra 400615
+           </div>
+           <div class="col s12 m12 l12"><i class="material-icons left">location_on</i><h6><u>Branch-3</u></h6>CPWD <br>Goverment office <br>
+             15th floor,old Cgo Annexe, G.B.Road,thane(west), mumbai
+             maharashtra 400615
+           </div>
+             <br>
+             <hr>
+             <i class="row material-icons large  col s5 m5 l5 ">contact_phone</i>
+             <div class="offset-m2 offset-l2 col s12 m2 l2">8291685462</div>
+             <div class="offset-m2 offset-l2 col s12 m2 l2">9769213895</div>
+             <div class="offset-m2 offset-l2 col s12 m2 l2">8082606883</div>
+      </div>
+      <div class="offset-l1  offset-m1 col s12 m6 l5 card-panel brown darken-4 z-depth-5">
+       <div class="card-panel grey darken-3 input-field col s12 m12 l12 z-depth-5">
+          <i class="material-icons prefix">account_circle</i>
+          <input id="name" type="text" class="validate" name="name" value="">
+          <label for="icon_prefix">Name</label>
+        </div>
+        <div class="card-panel grey darken-3 input-field col s12 m12 l12 z-depth-5">
+          <i class="material-icons prefix">phone</i>
+          <input id="telephone" type="tel" class="validate" name="telephone">
+          <label for="icon_telephone">Telephone</label>
+        </div>
+        <div class=" card-panel grey darken-3 input-field col s12 m12 l12 z-depth-5">
+          <i class="material-icons prefix">email</i>
+          <input id="email" type="text" class="validate" id="email" name="email">
+          <label for="icon_prefix">Email_id</label>
+        </div>
+          <div class="card-panel grey darken-3 input-field col s12 z-depth-5">
+          <i class="material-icons prefix">mode_edit</i>
+          <textarea id="message" class="materialize-textarea" name="message"></textarea>
+          <label for="icon_prefix2">Message:</label>
+        </div>
+        <br>
+        <button class="waves-effect waves-light btn z-depth-5 blue darken-4" type="submit">submit</button>
+      </div>
+      </div>
+
+
+    </form>
+</div>
+<br><br>
+        <hr>
+<div id="map"></div>
+
+
+      <footer class="page-footer light-blue darken-4">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">Content</h5>
+                <p class="grey-text text-lighten-4">This is a simple miniproject as to understand how a website can be built using different frameworks and tools
+                the content of the website is taken from different websites.Links for more details of the website is provided above</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Links</h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2014 Copyright Text
+            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            </div>
+          </div>
+        </footer>
+         <script>
+      function initMap() {
+        var myLatLng = {lat: 19.2183, lng: 72.9781};
+        var myLatLng1 = {lat: 19.0473,lng: 73.0699};
+        var myLatLng2 = {lat: 19.217907,lng: 72.847084}
+
+        // Create a map object and specify the DOM element for display.
+        var map = new google.maps.Map(document.getElementById('map'), {
+          center: myLatLng,
+          zoom: 10
+        });
+
+        // Create a marker and set its position.
+        var marker = new google.maps.Marker({
+          map: map,
+          position: myLatLng,
+          title: 'branch-1'
+        });
+        // Create a marker and set its position.
+        var marker = new google.maps.Marker({
+          map: map,
+          position: myLatLng1,
+          title: 'branch-2'
+        });
+        // Create a marker and set its position.
+        var marker = new google.maps.Marker({
+          map: map,
+          position: myLatLng2,
+          title: 'branch-3'
+        });
+      }
+
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwOgvK-M6ZOEitCoVb58zObSzcmvrEfdY&callback=initMap"
+        async defer></script>
+        <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
